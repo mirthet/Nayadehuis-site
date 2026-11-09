@@ -31,12 +31,12 @@ const albums = [
     fotos: [
       'images/galerij/HM_2025/IMG_6698.jpeg',
       'images/galerij/HM_2025/IMG_6728.jpeg',
-      'images/galerij/HM_2025/SAM_1228.JPG',
-      'images/galerij/HM_2025/SAM_1257.JPG',
-      'images/galerij/HM_2025/SAM_1320.JPG',
-      'images/galerij/HM_2025/SAM_1324.JPG',
-      'images/galerij/HM_2025/SAM_1347.JPG',
-      'images/galerij/HM_2025/SAM_1373.JPG'
+      'images/galerij/HM_2025/SAM_1228.jpg',
+      'images/galerij/HM_2025/SAM_1257.jpg',
+      'images/galerij/HM_2025/SAM_1320.jpg',
+      'images/galerij/HM_2025/SAM_1324.jpg',
+      'images/galerij/HM_2025/SAM_1347.jpg',
+      'images/galerij/HM_2025/SAM_1373.jpg'
     ]
   }
   
