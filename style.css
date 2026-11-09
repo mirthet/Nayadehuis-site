@@ -429,3 +429,126 @@ footer { background: #07172e; color: #bac9dc; padding: 34px 0; font-size: 13px; 
 .dictionary-card[hidden] {
     display: none;
 }
+
+
+/* =========================================
+   CONTACTPAGINA
+========================================= */
+
+/* Introductie */
+.contact-hero {
+    background: var(--hero-blue);
+    color: white;
+    padding: 100px 0 90px;
+}
+
+.contact-hero h1 {
+    color: var(--yellow);
+    font-size: clamp(36px, 5vw, 68px);
+    margin-bottom: 24px;
+}
+
+.contact-hero p {
+    max-width: 700px;
+    color: #c2d0e2;
+    font-size: 18px;
+}
+
+/* Contactgedeelte */
+.contact-page-section {
+    background: #f2f6fb;
+}
+
+.contact-page-heading {
+    margin-bottom: 35px;
+}
+
+.contact-page-heading h2 {
+    color: var(--hero-blue);
+    font-size: clamp(30px, 4vw, 48px);
+}
+
+.contact-page-heading p {
+    color: var(--muted);
+    font-size: 17px;
+}
+
+/* Contactkaarten */
+.contact-page-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.contact-page-card {
+    background: white;
+    padding: 35px;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(13,35,70,.08);
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contact-page-icon {
+    font-size: 38px;
+    color: var(--hero-blue);
+    margin-bottom: 20px;
+}
+
+.contact-page-card h3 {
+    color: var(--hero-blue);
+    font-size: 26px;
+}
+
+.contact-page-card p {
+    color: var(--muted);
+    line-height: 1.8;
+    flex-grow: 1;
+}
+
+.contact-page-card .btn {
+    margin-top: 15px;
+}
+
+/* Locatie */
+.contact-location-section {
+    background: white;
+}
+
+.contact-map {
+    overflow: hidden;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(13,35,70,.08);
+}
+
+.contact-map iframe {
+    display: block;
+    width: 100%;
+    height: 420px;
+    border: 0;
+}
+
+/* Mobiele weergave */
+@media (max-width: 768px) {
+    .contact-hero {
+        padding: 70px 0 60px;
+    }
+
+    .contact-hero p {
+        font-size: 16px;
+    }
+
+    .contact-page-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-page-card {
+        padding: 25px;
+    }
+
+    .contact-map iframe {
+        height: 300px;
+    }
+}
