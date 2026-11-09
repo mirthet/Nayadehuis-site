@@ -1,6 +1,16 @@
-todo lijst:
+NAYADEHUIS – gecontroleerde website
 
-- Geschiedenis nog helemaal invullen
-- bewoners LD aanpassen
-- bewoners gebleven bij BV 
-- Startpagina fotos van de kippen toevoegen
+Open index.html via Live Server of upload de inhoud van deze map naar je hosting.
+De verwijzingen zijn gecontroleerd en de Huisfeest-navigatielinks verwijderd.
+De pagina Huisfeest.html zat niet in het aangeleverde project.
+
+LET OP: bij Liam (LD) ontbreekt de foto images/bewoners/LD.jpg in de oorspronkelijke ZIP.
+De pagina toont daarom tijdelijk “Foto volgt”. Voeg later de juiste afbeelding toe
+en vervang die tekst in bewoners.html door een img-element.
+
+De fotobestanden in galerij.js gebruiken nu de juiste hoofdletters (.JPG).
+Bestanden .git, reserves en oude losse voorbeeldfragmenten zijn niet nodig voor
+de gepubliceerde website en zitten niet in deze ZIP. Bewaar je originele project
+met .git lokaal als je Git gebruikt.
+
+Fotogalerijafbeeldingen zijn publiek toegankelijk als je deze site openbaar host.

@@ -552,3 +552,6 @@ footer { background: #07172e; color: #bac9dc; padding: 34px 0; font-size: 13px; 
         height: 300px;
     }
 }
+
+/* Tijdelijke aanduiding voor bewoners zonder profielfoto */
+.missing-resident-photo { color: #436181; font-weight: 700; }

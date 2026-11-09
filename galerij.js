@@ -7,8 +7,8 @@
  * omschrijving: korte toelichting
  * fotos: exacte bestandsnamen, inclusief extensie
  *
- * Plaats bijvoorbeeld de foto's van een huisfeest in:
- * images/galerij/huisfeest-2026/foto1.jpg
+ * Plaats bijvoorbeeld foto's van een evenement in:
+ * images/galerij/evenement-2026/foto1.jpg
  *
  * Let op: JavaScript in de browser kan NIET automatisch alle bestanden
  * uit een lokale map uitlezen. Voeg nieuwe foto's daarom hier toe.
@@ -31,27 +31,17 @@ const albums = [
     fotos: [
       'images/galerij/HM_2025/IMG_6698.jpeg',
       'images/galerij/HM_2025/IMG_6728.jpeg',
-      'images/galerij/HM_2025/SAM_1228.jpg',
-      'images/galerij/HM_2025/SAM_1257.jpg',
-      'images/galerij/HM_2025/SAM_1320.jpg',
-      'images/galerij/HM_2025/SAM_1324.jpg',
-      'images/galerij/HM_2025/SAM_1347.jpg',
-      'images/galerij/HM_2025/SAM_1373.jpg'
+      'images/galerij/HM_2025/SAM_1228.JPG',
+      'images/galerij/HM_2025/SAM_1257.JPG',
+      'images/galerij/HM_2025/SAM_1320.JPG',
+      'images/galerij/HM_2025/SAM_1324.JPG',
+      'images/galerij/HM_2025/SAM_1347.JPG',
+      'images/galerij/HM_2025/SAM_1373.JPG'
     ]
   }
   
-  // Nieuw album? Voeg na het vorige object een komma toe en plaats bijvoorbeeld:
-  // ,{
-  //   id: 'huisfeest-2026',
-  //   titel: 'Huisfeest 2026',
-  //   omschrijving: 'De mooiste foto’s van het huisfeest.',
-  //   fotos: [
-  //     'images/galerij/huisfeest-2026/foto1.jpg',
-  //     'images/galerij/huisfeest-2026/foto2.jpg',
-  //     'images/galerij/huisfeest-2026/foto3.jpg',
-  //     'images/galerij/huisfeest-2026/foto4.jpg'
-  //   ]
-  // }
+  // Nieuw album toevoegen? Kopieer een bestaand albumobject hierboven,
+  // voeg een komma tussen de objecten toe en pas de fotopaden aan.
 ];
 
 const content = document.getElementById('gallery-content');
