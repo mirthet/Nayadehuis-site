@@ -1,0 +1,8 @@
+1. Kopieer galerij.html, galerij.css en galerij.js naar dezelfde map als index.html.
+2. Kopieer de inhoud van homepage-fotoblok.html naar index.html, bij voorkeur vlak voor de footer. Vervang eventueel een bestaande foto-placeholder/galerijsectie.
+3. Plak de inhoud van fotoblok.css helemaal onderaan je BESTAANDE style.css; overschrijf die niet.
+4. Maak images/galerij/ en zet daar foto1.jpg t/m foto6.jpg neer. Als jouw foto's .png zijn: pas de paden in beide HTML-bestanden aan.
+5. Open index.html met Live Server, klik op 'Bekijk alle foto's'.
+6. Extra foto's toevoegen? Dupliceer een <button class="photo">...</button> in galerij.html en pas de bestandsnaam aan.
+7. Verwijder in de navigatie op index.html eventuele verwijzingen naar #fotos als je juist de aparte pagina direct in het menu wilt openen: href="galerij.html".
+LET OP: alleen zelf gekozen, openbaar te gebruiken foto's publiceren. Vraag toestemming aan herkenbaar afgebeelde bewoners/gasten.

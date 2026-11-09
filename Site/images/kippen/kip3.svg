@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 480" role="img" aria-label="Tijdelijke illustratie van een kip">
+<rect width="600" height="480" fill="#dce8f3"/><circle cx="485" cy="92" r="45" fill="#f9d56f" opacity=".55"/>
+<path d="M0 360Q120 315 255 356T600 354V480H0Z" fill="#a8cda4"/>
+<path d="M0 405Q170 370 310 401T600 387V480H0Z" fill="#7fb58a"/>
+<path d="M168 265Q115 230 133 170Q157 192 185 200Q181 141 212 128Q229 178 230 210" fill="#2a3443"/>
+<ellipse cx="290" cy="273" rx="136" ry="106" fill="#535f68"/>
+<path d="M348 260Q352 188 385 158Q398 121 422 142Q462 167 450 221Q443 260 416 279" fill="#535f68"/>
+<path d="M382 151Q369 122 393 107Q402 121 403 135Q412 106 428 112Q439 128 430 146Q453 128 462 150Q463 164 450 175" fill="#da6455"/>
+<path d="M445 201l51 17-46 22Z" fill="#f2b446"/><circle cx="430" cy="188" r="6" fill="#23354c"/>
+<path d="M251 274Q286 236 347 266Q326 327 261 324Q228 301 251 274Z" fill="#2a3443" opacity=".8"/>
+<path d="M274 364v50m82-50v50" stroke="#bd853b" stroke-width="9" stroke-linecap="round"/>
+<path d="M250 418h43m44 0h44" stroke="#bd853b" stroke-width="9" stroke-linecap="round"/>
+<rect x="151" y="427" width="298" height="38" rx="19" fill="#ffffff" opacity=".93"/><text x="300" y="453" text-anchor="middle" fill="#425976" font-family="Arial,sans-serif" font-weight="bold" font-size="20">Voeg hier een kippenfoto toe</text></svg>

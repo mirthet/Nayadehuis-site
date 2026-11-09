@@ -1,0 +1,28 @@
+:root { --navy:#071732; --blue:#0D2346; --yellow:#ffbf00; --light:#eaf2fa; }
+* { box-sizing:border-box; }
+body { margin:0; color:var(--navy); font-family:Inter,Arial,sans-serif; background:var(--light); }
+a { color:inherit; }
+.container { width:min(1200px, calc(100% - 48px)); margin:0 auto; }
+.site-header { background:var(--navy); color:white; }
+.nav { max-width:1200px; margin:auto; min-height:82px; padding:18px 24px; display:flex; justify-content:space-between; align-items:center; gap:20px; }
+.brand { font-weight:900; text-decoration:none; font-size:1.6rem; color:white; }
+.brand span,.gallery-hero h1 span { color:var(--yellow); }
+.back-link { text-decoration:none; color:white; font-weight:600; }
+.back-link:hover { color:var(--yellow); }
+.gallery-hero { background:var(--blue); color:white; padding:70px 0; }
+.eyebrow { color:var(--yellow); letter-spacing:.15em; font-size:.8rem; font-weight:800; }
+.gallery-hero h1 { font-size:clamp(2.4rem,5vw,4.5rem); line-height:1.1; margin:14px 0; }
+.gallery-hero p:last-child { color:#f0f4ff; max-width:650px; line-height:1.65; }
+.gallery-section { padding:48px 0 80px; }
+.gallery-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:18px; }
+.photo { padding:0; border:0; background:transparent; cursor:zoom-in; border-radius:14px; overflow:hidden; transition:transform .2s, box-shadow .2s; }
+.photo img { display:block; width:100%; aspect-ratio:4/3; object-fit:cover; }
+.photo:hover { transform:translateY(-4px); box-shadow:0 12px 26px rgba(13,35,70,.2); }
+.photo:focus-visible,.close-dialog:focus-visible,.back-link:focus-visible { outline:3px solid var(--yellow); outline-offset:4px; }
+#photo-dialog { border:0; padding:20px; border-radius:16px; background:#101b30; color:white; max-width:min(1000px,95vw); max-height:95vh; }
+#photo-dialog::backdrop { background:rgba(4,12,30,.85); }
+#large-photo { display:block; max-width:85vw; max-height:80vh; width:auto; height:auto; object-fit:contain; }
+.close-dialog { cursor:pointer; border:0; color:white; background:transparent; font-size:2.3rem; display:block; margin-left:auto; }
+.footer { background:var(--navy); color:white; text-align:center; padding:25px; }
+@media (max-width:800px) { .gallery-grid {grid-template-columns:repeat(2,minmax(0,1fr));} }
+@media (max-width:480px) { .gallery-grid {gap:10px;} .nav {min-height:70px;} .brand{font-size:1.25rem;} .back-link{font-size:.85rem;} .gallery-hero{padding:50px 0;} }

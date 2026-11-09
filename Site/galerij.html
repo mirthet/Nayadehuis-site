@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bekijk fotoalbums en herinneringen van het Nayadehuis in Eindhoven.">
+  <title>Fotogalerij | Nayadehuis</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="galerij.css">
+  <script src="script.js" defer></script>
+  <script src="galerij.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav class="nav" aria-label="Hoofdnavigatie">
+      <a class="brand" href="index.html">NAYADEHUIS</a>
+      <button class="menu" type="button" aria-controls="navlinks" aria-expanded="false">☰ Menu</button>
+      <div class="links" id="navlinks">
+        <a href="index.html">Home</a>
+        <a href="geschiedenis.html">Geschiedenis</a>
+        <a href="bewoners.html">Bewoners</a>
+        <a href="Bier-drink-top20.html">Bier-drink-Top20</a>
+        <a href="galerij.html" aria-current="page">Foto's</a>
+        <a href="Woordenboek.html">Woordenboek</a>
+        <a href="Contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="album-hero">
+      <div class="container">
+        <h1 id="gallery-title">Het Nayadehuis in beeld<span class="accent">.</span></h1>
+        <p id="gallery-subtitle">Alle herinneringen, activiteiten en bijzondere momenten bij elkaar.</p>
+      </div>
+    </section>
+
+    <section class="section album-section">
+      <div class="container">
+        <div id="gallery-content" aria-live="polite"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container foot">
+      <span><strong>NAYADEHUIS.</strong> · Eindhoven</span>
+      <a href="https://www.nayade.nl/">E.S.W.Z.V. Nayade ↗</a>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,431 @@
+/* NAYADEHUIS — ALGEMEEN */
+:root {
+  --navy: #071732;
+  --hero-blue: #0d2346;
+  --yellow: #ffbf00;
+  --light-blue: #eaf2fa;
+  --section-light: #f2f6fb;
+  --ink: #20324c;
+  --muted: #64758a;
+  --housemate-blue: #4169d1;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; font: 16px/1.65 Inter, Arial, sans-serif; color: var(--ink); background: #fff; }
+h1, h2, h3 { font-family: Outfit, Arial, sans-serif; line-height: 1.15; margin: 0 0 16px; }
+h2 { font-size: clamp(2.2rem, 4vw, 3.5rem); letter-spacing: -.03em; }
+p { margin: 0 0 22px; }
+a { color: inherit; text-decoration: none; }
+button { font: inherit; }
+.container { width: 100%; max-width: 1180px; margin: 0 auto; padding: 0 24px; }
+.section { padding: 95px 0; }
+.section.alt { background: var(--section-light); }
+.section.dark { background: var(--navy); color: #fff; }
+.dark p { color: #c2d0e2; }
+.section-heading { max-width: 700px; margin-bottom: 38px; }
+.section-heading p { color: var(--muted); }
+.eyebrow { text-transform: uppercase; letter-spacing: .19em; font-size: .76rem; font-weight: 800; color: #a2b6cf; margin-bottom: 20px; }
+.two { display: grid; grid-template-columns: 1.15fr 1fr; gap: 70px; align-items: center; }
+
+/* NAVIGATIE */
+header { background: var(--navy); color: #fff; position: sticky; top: 0; z-index: 10; box-shadow: 0 2px 12px #081a3440; }
+.nav { display: flex; justify-content: space-between; align-items: center; gap: 20px; max-width: 1180px; margin: 0 auto; padding: 17px 24px; }
+.brand { font: 800 26px Outfit, sans-serif; color: var(--yellow); letter-spacing: -.04em; }
+.links { display: flex; gap: 24px; align-items: center; font-size: 13px; font-weight: 600; }
+.links a:hover, .links a:focus-visible, .links a[aria-current="page"] { color: var(--yellow); }
+.menu { display: none; background: none; color: #fff; border: 1px solid #8291aa; border-radius: 8px; padding: 6px 12px; cursor: pointer; }
+
+/* KNOPPEN EN FOOTER */
+.btn { display: inline-block; width: fit-content; background: var(--yellow); color: var(--navy); padding: 13px 24px; border-radius: 10px; font-weight: 800; font-size: .9rem; transition: transform .18s ease; }
+.btn:hover { transform: translateY(-2px); }
+footer { background: #07172e; color: #bac9dc; padding: 34px 0; font-size: 13px; }
+.foot { display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+.foot strong { color: var(--yellow); }
+.contact { display: flex; justify-content: space-between; align-items: center; gap: 30px; flex-wrap: wrap; }
+
+/* HOMEPAGE — HERO */
+.hero { position: relative; overflow: hidden; background: var(--hero-blue); min-height: 550px; display: flex; align-items: center; padding: 65px 7%; }
+.hero-container { width: 100%; max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: center; gap: clamp(24px, 5vw, 70px); position: relative; z-index: 1; }
+.hero-text { min-width: 0; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; text-align: left; }
+.hero-title { width: min(100%, 480px); display: flex; flex-direction: column; align-items: center; gap: 12px; margin: 0 0 18px; padding: 0; line-height: normal; letter-spacing: normal; }
+.hero-welcome { display: block; color: var(--yellow); font-size: clamp(28px, 3.6vw, 52px); font-weight: 800; line-height: 1.2; letter-spacing: -.025em; text-align: center; white-space: nowrap; }
+.hero-logo { display: block; width: min(100%, 420px); height: auto; object-fit: contain; }
+.hero-text p { max-width: 500px; margin: 0 0 26px; color: #fff; font-size: 18px; line-height: 1.65; }
+.hero-image { display: flex; align-items: center; justify-content: center; min-width: 0; }
+.hero-image img { display: block; width: 100%; max-width: 500px; height: auto; object-fit: contain; }
+.hero::after { content: '≈'; position: absolute; font-size: 38rem; right: -2rem; bottom: -21rem; opacity: .045; font-family: serif; pointer-events: none; }
+.house-photo { width: 100%; overflow: hidden; border-radius: 16px; }
+.house-photo img { display: block; width: 100%; height: 350px; object-fit: cover; object-position: center; }
+
+/* HOMEPAGE — GALERIJ */
+.photo-preview { background: var(--navy); padding: 80px 24px; color: #fff; }
+.photo-preview-inner { max-width: 1200px; margin: 0 auto; text-align: center; }
+.photo-preview-heading { margin-bottom: 32px; }
+.photo-preview .section-eyebrow { color: var(--yellow); font-weight: 800; letter-spacing: .14em; font-size: .8rem; }
+.photo-preview h2 { color: #fff; margin: 10px 0; font-size: clamp(1.7rem, 3vw, 2.7rem); line-height: 1.2; }
+.photo-preview p { color: #c2d0e2; margin: 0; }
+.photo-preview-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.photo-preview-grid img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 14px; transition: transform .25s ease, box-shadow .25s ease; }
+.photo-preview-grid img:hover { transform: translateY(-4px); box-shadow: 0 12px 30px rgba(13,35,70,.18); }
+.gallery-link { display: inline-flex; gap: 12px; align-items: center; justify-content: center; margin-top: 30px; padding: 15px 25px; border-radius: 10px; color: var(--hero-blue); background: var(--yellow); font-weight: 800; transition: background .2s, transform .2s; }
+.gallery-link:hover { background: #ffd147; transform: translateY(-2px); }
+
+/* HOMEPAGE — KIPPEN */
+.residents-preview { background: var(--light-blue); }
+.residents-preview-heading { text-align: center; margin: 0 auto 35px; max-width: 760px; }
+.residents-preview-heading h2 {
+    color: #A67C00;
+    font-size: clamp(32px, 4vw, 48px);
+    margin-bottom: 14px;
+}
+.residents-preview-heading p { color: var(--muted); margin: 0; }
+.residents-eyebrow { display: block; color: #8a6900; font-weight: 800; font-size: .8rem; letter-spacing: .15em; margin-bottom: 12px; }
+.chicken-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+.chicken-card { background: #fff; border-radius: 18px; overflow: hidden; box-shadow: 0 8px 25px rgba(13,35,70,.1); transition: transform .25s ease, box-shadow .25s ease; }
+.chicken-card:hover { transform: translateY(-5px); box-shadow: 0 14px 35px rgba(13,35,70,.15); }
+.chicken-picture { background: #dce8f3; aspect-ratio: 4/3; overflow: hidden; }
+.chicken-picture img { width: 100%; height: 100%; display: block; object-fit: cover; }
+.chicken-details { padding: 20px 24px 22px; }
+.chicken-details h3 { color: var(--hero-blue); font-size: 1.45rem; margin: 6px 0 0; }
+.residents-label { color: #826400; font-weight: 800; letter-spacing: .1em; font-size: .72rem; text-transform: uppercase; }
+.residents-actions { text-align: center; margin-top: 34px; }
+
+/* HOMEPAGE — BIER TOP 3 */
+.beer-top3-preview { background: var(--navy); color: #fff; }
+.beer-top3-heading { text-align: center; margin-bottom: 40px; }
+.beer-top3-heading h2 { color: var(--yellow); font-size: clamp(32px, 4vw, 48px); margin-bottom: 14px; }
+.beer-top3-heading p { color: #c2d0e2; font-size: 17px; margin: 0; }
+.beer-top3-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+.beer-top3-card { padding: 35px 24px; border-radius: 18px; text-align: center; box-shadow: 0 8px 25px rgba(13,35,70,.10); transition: transform .25s ease; }
+.beer-top3-card:hover { transform: translateY(-5px); }
+.beer-top3-card.gold { background: #fff6d6; }
+.beer-top3-card.silver { background: #f0f2f5; }
+.beer-top3-card.bronze { background: #f8e8da; }
+.beer-top3-medal { display: block; font-size: 48px; margin-bottom: 15px; }
+.beer-top3-card h3 { font-size: 26px; color: var(--hero-blue); margin-bottom: 8px; }
+.beer-top3-card .huisgenoot-naam { color: var(--housemate-blue); }
+.beer-top3-card p { color: var(--muted); margin-bottom: 20px; }
+.beer-top3-time { font: 800 32px Outfit, sans-serif; color: var(--navy); font-variant-numeric: tabular-nums; }
+.beer-top3-actions { text-align: center; margin-top: 35px; }
+
+/* HOMEPAGE — KOM OP VISITE */
+.visite-section { background: var(--section-light); color: var(--ink); }
+.visite-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: center; gap: 60px; }
+.visite-text h2 { font-size: clamp(32px, 4vw, 48px); margin-bottom: 24px; color: var(--hero-blue); }
+.visite-text p { color: var(--muted); font-size: 17px; line-height: 1.8; margin-bottom: 16px; }
+.visite-image img { display: block; width: 100%; height: 350px; object-fit: cover; border-radius: 16px; }
+
+/* GESCHIEDENISPAGINA */
+.history-hero { background: var(--hero-blue); color: #fff; padding: 110px 0 100px; }
+.history-eyebrow { display: block; color: var(--yellow); font-size: .8rem; font-weight: 800; letter-spacing: .16em; margin-bottom: 20px; }
+.history-hero h1 { font-size: clamp(38px, 5vw, 68px); max-width: 850px; color: #fff; margin-bottom: 24px; }
+.history-hero p { max-width: 650px; font-size: 18px; line-height: 1.8; color: #c2d0e2; }
+.timeline { border-left: 4px solid var(--yellow); padding-left: 25px; margin-top: 30px; }
+.timeline div { margin-bottom: 24px; }
+.timeline strong { color: var(--yellow); }
+
+/* BEWONERSPAGINA EN OUD-HUISGENOTEN */
+.residents-page-hero { background: var(--hero-blue); color: #fff; padding: 85px 0 70px; }
+.residents-page-hero h1 { font-size: clamp(2.7rem, 5vw, 4.5rem); color: #fff; margin: 0 0 14px; }
+.residents-page-hero .accent, .residents-page-hero .residents-eyebrow { color: var(--yellow); }
+.residents-page-hero p { max-width: 640px; color: #eef3ff; font-size: 1.1rem; }
+.residents-back { color: var(--yellow); font-weight: 700; }
+.residents-back:hover { text-decoration: underline; }
+.residents-page-section { background: var(--section-light); }
+.residents-page-section h2 { color: var(--hero-blue); }
+.residents-page-intro { max-width: 700px; color: var(--muted); }
+.people-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 24px; margin-top: 34px; }
+.person-card { display: grid; grid-template-columns: 220px minmax(0, 1fr) minmax(0, 1fr); gap: 30px; align-items: center; padding: 24px; background: #fff; border: 1px solid #e5eaf0; border-radius: 18px; box-shadow: 0 7px 22px #0c244212; }
+.person-photo { width: 100%; height: 240px; overflow: hidden; border-radius: 10px; background: linear-gradient(135deg, #dce8f3, #c6d9ea); color: #436181; display: flex; align-items: center; justify-content: center; text-align: center; font-weight: 700; }
+.person-photo img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center 20%; transition: transform .25s ease; }
+.person-card:hover .person-photo img { transform: scale(1.05); }
+.person-info, .person-description { min-width: 0; }
+.person-info h3, .person-description h3, .person-description h4 { color: var(--hero-blue); margin: 0 0 12px; }
+.person-info h3 { font-size: 1.4rem; }
+.person-info p, .person-description p { color: var(--muted); font-size: .95rem; margin: 0 0 8px; }
+.former-residents-section { background: var(--navy); color: #fff; }
+.former-residents-section .eyebrow { color: var(--yellow); }
+.former-residents-section h2 { color: #fff; }
+.former-residents-intro { color: #c2d0e2; max-width: 700px; margin-bottom: 35px; }
+.former-residents-section .person-card { color: var(--ink); }
+
+/* BIER TOP 20 — TABEL */
+.beer-hero { background: var(--hero-blue); color: #fff; padding: 100px 0 90px; }
+.beer-eyebrow { display: block; color: var(--yellow); font-size: .8rem; font-weight: 800; letter-spacing: .16em; margin-bottom: 18px; }
+.beer-hero h1 { font-size: clamp(36px, 5vw, 68px); max-width: 1000px; color: #fff; margin-bottom: 22px; }
+.beer-hero .accent { color: var(--yellow); }
+.beer-hero p { max-width: 650px; font-size: 18px; color: #c2d0e2; }
+.beer-section { background: var(--section-light); }
+.beer-heading { margin-bottom: 35px; }
+.beer-heading h2 { color: var(--hero-blue); }
+.beer-heading p { color: var(--muted); }
+.beer-table-wrapper { overflow-x: auto; border-radius: 16px; box-shadow: 0 8px 28px rgba(7,23,50,.1); }
+.beer-table { width: 100%; border-collapse: collapse; background: #fff; min-width: 550px; }
+.beer-table thead { background: var(--navy); color: #fff; }
+.beer-table th { padding: 20px 24px; text-align: left; font-size: 15px; font-weight: 800; }
+.beer-table td { padding: 18px 24px; border-bottom: 1px solid #e5eaf0; color: var(--ink); font-size: 15px; }
+.beer-table td:last-child { font-weight: 800; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.beer-table tbody tr:nth-child(even) { background: #f7faff; }
+.beer-table tbody tr:hover { background: var(--light-blue); }
+/* De podiumkleuren winnen van de afwisselende rijachtergrond. */
+.beer-table tbody tr.rank-gold { background: #fff6d6; }
+.beer-table tbody tr.rank-silver { background: #f0f2f5; }
+.beer-table tbody tr.rank-bronze { background: #f8e8da; }
+.beer-table .rank-gold td:first-child, .beer-table .rank-silver td:first-child, .beer-table .rank-bronze td:first-child { font-weight: 800; }
+.beer-table tr.huisgenoot td { color: var(--housemate-blue); }
+.beer-legend { display: flex; align-items: center; gap: 10px; margin-top: 24px; font-size: 14px; color: var(--muted); }
+.legend-dot { display: inline-block; width: 12px; height: 12px; background: var(--housemate-blue); border-radius: 50%; flex-shrink: 0; }
+
+/* OVERIGE BESTAANDE HULPKLASSEN */
+.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+.card { background: #fff; border-radius: 18px; overflow: hidden; box-shadow: 0 7px 22px #0c244212; }
+.pic { min-height: 230px; display: flex; align-items: center; justify-content: center; padding: 20px; text-align: center; background: linear-gradient(135deg, #c3d6e8, #829eba); color: #344b65; font-weight: 600; }
+.card .inside { padding: 26px; }
+.card h3 { font-size: 1.45rem; }
+.card p { color: var(--muted); font-size: .93rem; }
+.tag { color: #947400; font-size: .75rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+.placeholder { min-height: 340px; border-radius: 24px; background: linear-gradient(135deg, #d3e0ed, #759ab8); display: flex; justify-content: center; align-items: center; text-align: center; color: #294765; font-weight: 700; }
+.gallery { display: grid; grid-template-columns: 2fr 1fr 1fr; grid-template-rows: 180px 180px; gap: 12px; }
+.gallery .pic { min-height: 0; border-radius: 14px; }
+.gallery .pic:first-child { grid-row: span 2; }
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .person-card { grid-template-columns: 180px minmax(0, 1fr) minmax(0, 1fr); gap: 20px; padding: 20px; }
+}
+@media (max-width: 850px) {
+  .links { display: none; position: absolute; top: 100%; left: 0; right: 0; background: var(--navy); padding: 20px 24px; flex-direction: column; align-items: flex-start; }
+  .links.show { display: flex; }
+  .menu { display: block; }
+  .two { grid-template-columns: 1fr; gap: 28px; }
+  .grid { grid-template-columns: repeat(2, 1fr); }
+  .gallery { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 800px) {
+  .photo-preview-grid, .chicken-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 768px) {
+  .hero { padding: 50px 6%; min-height: auto; }
+  .hero-container, .visite-grid { grid-template-columns: 1fr; gap: 30px; }
+  .hero-text { align-items: center; text-align: center; }
+  .hero-title { width: min(100%, 480px); }
+  .hero-welcome { font-size: clamp(25px, 6vw, 42px); white-space: normal; }
+  .hero-logo { width: min(100%, 350px); }
+  .hero-image img { max-width: 350px; }
+  .visite-image img { height: 250px; }
+  .history-hero { padding: 75px 0 65px; }
+  .history-hero p, .beer-hero p { font-size: 16px; }
+  .beer-hero { padding: 70px 0 60px; }
+  .beer-table th, .beer-table td { padding: 14px 16px; font-size: 14px; }
+  .beer-top3-grid { grid-template-columns: 1fr; gap: 18px; }
+  .beer-top3-card { padding: 26px 20px; }
+  .beer-top3-medal { font-size: 40px; }
+}
+@media (max-width: 700px) {
+  .person-card { grid-template-columns: 1fr; gap: 16px; }
+  .person-photo { height: 300px; }
+}
+@media (max-width: 560px) {
+  .section { padding: 68px 0; }
+  .grid { grid-template-columns: 1fr; }
+  .gallery { grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(3, 150px); }
+  .gallery .pic:first-child { grid-column: span 2; grid-row: span 1; }
+  .hero-text p { font-size: 16px; }
+  .chicken-grid { grid-template-columns: 1fr; }
+  .residents-page-hero { padding: 60px 0; }
+}
+@media (max-width: 480px) {
+  .photo-preview { padding: 55px 18px; }
+  .photo-preview-grid { gap: 10px; }
+  .photo-preview-grid img { border-radius: 9px; }
+}
+
+
+/* =========================================
+   TITELSTIJL HOMEPAGE
+========================================= */
+
+/* Consistente titels */
+.photo-preview-heading,
+.residents-preview-heading,
+.beer-top3-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Grote hoofdtitels */
+.photo-preview-heading h2,
+.residents-preview-heading h2,
+.beer-top3-heading h2 {
+    font-size: clamp(32px, 4vw, 48px);
+    margin-bottom: 14px;
+}
+
+/* Beschrijvingen */
+.photo-preview-heading p,
+.residents-preview-heading p,
+.beer-top3-heading p {
+    font-size: 17px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* Donkere onderdelen: gele titel */
+.photo-preview-heading h2,
+.beer-top3-heading h2 {
+    color: var(--yellow);
+}
+
+/* Lichte onderdelen: donkerblauwe titel */
+.residents-preview-heading h2 {
+    color: var(--hero-blue);
+}
+
+/* Beschrijvingen op donkere achtergrond */
+.photo-preview-heading p,
+.beer-top3-heading p {
+    color: #c2d0e2;
+}
+
+/* Beschrijvingen op lichte achtergrond */
+.residents-preview-heading p {
+    color: var(--muted);
+}
+
+
+
+/* =========================================
+   WOORDENBOEK
+========================================= */
+
+/* Introductie */
+.dictionary-hero {
+    background: var(--hero-blue);
+    color: white;
+    padding: 100px 0 90px;
+}
+
+.dictionary-hero h1 {
+    color: var(--yellow);
+    font-size: clamp(36px, 5vw, 68px);
+    margin-bottom: 24px;
+}
+
+.dictionary-hero p {
+    max-width: 700px;
+    font-size: 18px;
+    color: #c2d0e2;
+}
+
+/* Woordenboekgedeelte */
+.dictionary-section {
+    background: #f2f6fb;
+}
+
+.dictionary-heading {
+    margin-bottom: 35px;
+}
+
+.dictionary-heading h2 {
+    color: var(--hero-blue);
+    font-size: clamp(30px, 4vw, 48px);
+}
+
+.dictionary-heading p {
+    color: var(--muted);
+}
+
+/* Zoekbalk */
+.dictionary-search {
+    margin-bottom: 35px;
+}
+
+.dictionary-search label {
+    display: block;
+    font-weight: 700;
+    color: var(--hero-blue);
+    margin-bottom: 10px;
+}
+
+.dictionary-search input {
+    width: 100%;
+    padding: 17px 20px;
+    border: 1px solid #d5dfeb;
+    border-radius: 12px;
+    font: inherit;
+    font-size: 16px;
+    background: white;
+    color: var(--ink);
+}
+
+.dictionary-search input:focus {
+    outline: 2px solid var(--yellow);
+    border-color: var(--yellow);
+}
+
+/* Begrippen */
+.dictionary-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 22px;
+}
+
+.dictionary-card {
+    background: white;
+    border: 1px solid #e5eaf0;
+    border-radius: 16px;
+    padding: 30px 35px;
+    box-shadow: 0 6px 20px rgba(7,23,50,.06);
+    transition: transform .2s ease;
+}
+
+.dictionary-card:hover {
+    transform: translateY(-3px);
+}
+
+.dictionary-card h3 {
+    color: var(--hero-blue);
+    font-size: 25px;
+    margin-bottom: 16px;
+}
+
+.dictionary-card p {
+    color: var(--muted);
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 14px;
+}
+
+.dictionary-card p:last-child {
+    margin-bottom: 0;
+}
+
+/* Zoekresultaten */
+.dictionary-no-results {
+    text-align: center;
+    color: var(--muted);
+    padding: 30px;
+}
+
+/* Mobiel */
+@media (max-width: 768px) {
+    .dictionary-hero {
+        padding: 70px 0 60px;
+    }
+
+    .dictionary-hero p {
+        font-size: 16px;
+    }
+
+    .dictionary-card {
+        padding: 24px 20px;
+    }
+
+    .dictionary-card h3 {
+        font-size: 22px;
+    }
+}
+.dictionary-card[hidden] {
+    display: none;
+}

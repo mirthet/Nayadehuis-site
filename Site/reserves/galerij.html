@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bekijk het fotoalbum van het Nayadehuis in Eindhoven: activiteiten, gezelligheid en mooie herinneringen.">
+  <title>Fotoalbum | Nayadehuis</title>
+  <link rel="stylesheet" href="galerij.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Hoofdnavigatie">
+      <a class="brand" href="index.html">Nayadehuis<span>.</span></a>
+      <a class="back-link" href="index.html">← Terug naar home</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="gallery-hero">
+      <div class="container">
+        
+        <h1>Onze galerij<span>.</span></h1>
+        <p>Herbleef de mooiste avonden bij ons thuis!</p>
+      </div>
+    </section>
+
+    <section class="gallery-section" aria-label="Fotogalerij">
+      <div class="container">
+        <div class="gallery-grid">
+          <button class="photo" type="button" aria-label="Vergroot foto 1"><img src="images/galerij/foto1.jpg" alt="Moment in het Nayadehuis" loading="lazy"></button>
+          <button class="photo" type="button" aria-label="Vergroot foto 2"><img src="images/galerij/foto2.jpeg" alt="Activiteit in het Nayadehuis" loading="lazy"></button>
+          <button class="photo" type="button" aria-label="Vergroot foto 3"><img src="images/galerij/foto3.jpg" alt="Studentenleven in het Nayadehuis" loading="lazy"></button>
+          <button class="photo" type="button" aria-label="Vergroot foto 4"><img src="images/galerij/foto4.jpg" alt="Gezellige avond in het Nayadehuis" loading="lazy"></button>
+          <button class="photo" type="button" aria-label="Vergroot foto 5"><img src="images/galerij/foto5.jpg" alt="Bewoners tijdens een activiteit" loading="lazy"></button>
+          <button class="photo" type="button" aria-label="Vergroot foto 6"><img src="images/galerij/foto6.jpg" alt="Herinnering uit het Nayadehuis" loading="lazy"></button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <dialog id="photo-dialog" aria-label="Vergrote foto">
+    <button type="button" class="close-dialog" aria-label="Sluit foto">×</button>
+    <img id="large-photo" src="" alt="">
+  </dialog>
+
+  <footer class="footer">© Nayadehuis · Eindhoven</footer>
+  <script src="galerij.js" defer></script>
+</body>
+</html>
